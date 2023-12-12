@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "first_name": "John",
+        "last_name": "Doe",
+        "email": "john.doe@example.com",
+        "password": "hashed_password_1"
+    },
+    {
+        "id": 2,
+        "first_name": "Jane",
+        "last_name": "Smith",
+        "email": "jane.smith@example.com",
+        "password": "hashed_password_2"
+    },
+    {
+        "id": 3,
+        "first_name": "Bob",
+        "last_name": "Jones",
+        "email": "bob.jones@example.com",
+        "password": "hashed_password_3"
+    },
+    {
+        "first_name": "Emir",
+        "last_name": "Caliskan",
+        "email": "emir@email.com",
+        "password": "$2b$10$.JmrNG6jznrS3nOi2TgQ7.atKAovvD0zi3t/XOVuy.X3Hc3tWRDIa",
+        "id": 4
+    }
+]
