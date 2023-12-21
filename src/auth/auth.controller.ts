@@ -4,8 +4,10 @@ import { AuthService } from './auth.service';
 import { AuthDto } from './dto/auth.dto';
 import { PassAuth } from './guards/pass-auth.guard';
 import { UserDto } from 'src/user/dto/user.dto';
+import { ApiTags } from '@nestjs/swagger';
 
 @PassAuth()
+@ApiTags('Auth') // Tag for API on Swagger UI
 @Controller('auth')
 export class AuthController {
     constructor(

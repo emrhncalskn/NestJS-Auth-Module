@@ -23,15 +23,21 @@ export class UserService {
   }
 
   async findAll() {
-    return this.users;
+    const users = this.users;
+    if (!users) return { errorMessage: "Users not found" };
+    return users;
   }
 
   async findwithID(id: number) {
-    return this.users.find((user) => user.id === id);
+    const user = this.users.find((user) => user.id === id);
+    if (!user) return { errorMessage: "User not found" };
+    return user;
   }
 
   async findOneWithEmail(email: string) {
-    return this.users.find((user) => user.email === email);
+    const user = this.users.find((user) => user.email === email);
+    if (!user) return { errorMessage: "User not found" };
+    return user;
   }
 
   async loadUsers() {
